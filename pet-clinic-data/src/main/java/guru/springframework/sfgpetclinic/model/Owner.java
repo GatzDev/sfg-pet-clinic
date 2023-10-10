@@ -1,7 +1,7 @@
 package guru.springframework.sfgpetclinic.model;
 
-public class Owner {
-    public Long getId() {
-        return getId();
-    }
+public class Owner extends Person{
+//    public Long getId() {
+//        return getId();
+//    }
 }
