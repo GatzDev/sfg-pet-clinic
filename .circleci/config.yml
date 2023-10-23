@@ -19,8 +19,7 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       # Use mvn clean and package as the standard maven build phase
-      - run: mvn install -DskipTests
-
+      - run: mvn install
       - run:
           name: Build
           command: mvn -B -DskipTests clean package
@@ -28,8 +27,6 @@ jobs:
       - run:
           name: Test
           command: mvn test
-
-      - run: mvn install
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
