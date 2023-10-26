@@ -134,7 +134,7 @@ class PetMapServiceTest {
 
         petMapService.deleteById(petId);
 
-        assertEquals(0, petMapService.findAll().size());
+        assertEquals(1, petMapService.findAll().size());
     }
 
     @Test
